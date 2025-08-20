@@ -23,7 +23,7 @@ const Article = () => {
       }}
     >
       <Link
-        href="https://dev.to/samitkapoor/how-to-make-your-website-link-look-amazing-on-social-media-58n1"
+        href="https://medium.com/@chandramanigupta2003/how-to-make-your-website-link-look-amazing-on-social-media-800acfa0aec6"
         target="_blank"
         className="mt-10 shadow-xl group hover:scale-105 transition-all duration-300 mx-4 block"
       >

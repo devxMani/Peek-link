@@ -7,7 +7,7 @@ const TopButtons = () => {
   return (
     <div className="fixed top-6 right-6 flex items-center gap-6 z-10">
       <Link
-        href="https://github.com/samitkapoor/peeklink"
+        href="https://github.com/devxMani/Peek-link"
         target="_blank"
         className="flex items-center gap-1.5 text-gray-700 hover:text-orange-500 transition-colors duration-200 group"
       >

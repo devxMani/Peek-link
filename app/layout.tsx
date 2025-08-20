@@ -52,12 +52,12 @@ export default function RootLayout({
         <p className="absolute bottom-10 text-center w-full">
           Made with ❤️ by{' '}
           <a
-            href="https://samitkapoor.com"
+            href="https://devxmani.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="underline font-medium text-orange-500"
           >
-            Samit Kapoor
+            Mani
           </a>
         </p>
         <Analytics />
