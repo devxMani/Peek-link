@@ -2,12 +2,12 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Twitter, Linkedin, MessageCircle, Facebook, Home as HomeIcon } from 'lucide-react';
+import { Twitter, Linkedin, MessageCircle, Facebook, Home as HomeIcon, type LucideIcon } from 'lucide-react';
 
 type Platform = {
   name: string;
   shortName: string;
-  icon: React.ComponentType<any> | null;
+  icon: LucideIcon | null;
   href?: string;
 };
 
