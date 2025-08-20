@@ -1,4 +1,4 @@
-# 🔗 peeklink
+# 🔗 Peek-link
 
 **Peeklink** is a simple web tool that lets you preview how your website or project link will look across multiple social media platforms — before you share it. Whether you're a developer, marketer, or content creator, peeklink ensures your shared links make the best first impression.
 
@@ -39,7 +39,7 @@ Contributions from the community are welcome! Here's how you can help:
 3. **Clone your fork**
 
    ```bash
-   git clone https://github.com/your-username/peeklink.git
+   git clone https://github.com/devxMani/Peek-link
    ```
 
 4. **Create a new branch**
@@ -60,9 +60,9 @@ Contributions from the community are welcome! Here's how you can help:
 If you found **peeklink** helpful:
 
 - 🌟 Star this repo to show support
-- 🚀 Check out more of my projects at [samitkapoor.com](https://samitkapoor.com)
-- 📬 Suggestions? Feel free to open an [issue](https://github.com/yourusername/peeklink/issues)
+- 🚀 Check out more of my projects at [https://github.com/devxMani)
+- 📬 Suggestions? Feel free to open an [issue](https://github.com/devxMani/Peek-link)
 
 ---
 
-Made with ❤️ by [Samit Kapoor](https://samitkapoor.com)
+Made with ❤️ by [Mani] ** (https://x.com/devxMani)
