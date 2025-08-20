@@ -1,9 +1,23 @@
 'use client';
 
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Twitter, Linkedin, MessageCircle, Facebook } from 'lucide-react';
+import { Twitter, Linkedin, MessageCircle, Facebook, Home as HomeIcon } from 'lucide-react';
 
-const SUPPORTED_PLATFORMS = [
+type Platform = {
+  name: string;
+  shortName: string;
+  icon: React.ComponentType<any> | null;
+  href?: string;
+};
+
+const SUPPORTED_PLATFORMS: Platform[] = [
+  {
+    name: 'Home',
+    icon: HomeIcon,
+    shortName: 'H',
+    href: '/'
+  },
   {
     name: 'Twitter',
     icon: Twitter,
@@ -73,15 +87,33 @@ const SupportedPlatforms = () => {
             className="group relative"
             title={platform.name}
           >
-            <div className="w-8 h-8 rounded-lg border border-gray-200 bg-white flex items-center justify-center group-hover:border-orange-300 group-hover:bg-orange-50 transition-all duration-200">
-              {platform.icon ? (
-                <platform.icon className="w-4 h-4 text-gray-600 group-hover:text-orange-500 transition-colors duration-200" />
-              ) : (
-                <span className="text-xs font-semibold text-gray-600 group-hover:text-orange-500 transition-colors duration-200">
-                  {platform.name.charAt(0)}
-                </span>
-              )}
-            </div>
+            {platform.href ? (
+              <a href={platform.href} aria-label={platform.name}>
+                <div className="w-8 h-8 rounded-lg border border-gray-200 bg-white flex items-center justify-center group-hover:border-orange-300 group-hover:bg-orange-50 transition-all duration-200">
+                  {platform.icon
+                    ? React.createElement(platform.icon, {
+                        className: 'w-4 h-4 text-gray-600 group-hover:text-orange-500 transition-colors duration-200'
+                      })
+                    : (
+                      <span className="text-xs font-semibold text-gray-600 group-hover:text-orange-500 transition-colors duration-200">
+                        {platform.shortName}
+                      </span>
+                    )}
+                </div>
+              </a>
+            ) : (
+              <div className="w-8 h-8 rounded-lg border border-gray-200 bg-white flex items-center justify-center group-hover:border-orange-300 group-hover:bg-orange-50 transition-all duration-200">
+                {platform.icon
+                  ? React.createElement(platform.icon, {
+                      className: 'w-4 h-4 text-gray-600 group-hover:text-orange-500 transition-colors duration-200'
+                    })
+                  : (
+                    <span className="text-xs font-semibold text-gray-600 group-hover:text-orange-500 transition-colors duration-200">
+                      {platform.shortName}
+                    </span>
+                  )}
+              </div>
+            )}
 
             {/* Tooltip */}
             <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-black text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none">
