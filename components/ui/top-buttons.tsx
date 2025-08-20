@@ -13,18 +13,7 @@ const TopButtons = () => {
       >
         <Image src="/icons/github.svg" alt="GitHub" width={20} height={20} />
         <span className="relative after:absolute after:w-0 after:h-px after:bg-orange-500 after:bottom-0 after:left-0 group-hover:after:w-full after:transition-all after:duration-200">
-          Star
-        </span>
-      </Link>
-
-      <Link
-        href="https://buymeacoffee.com/samitkapoow"
-        target="_blank"
-        className="flex items-center gap-1.5 text-gray-700 hover:text-orange-500 transition-colors duration-200 group"
-      >
-        <Image src="/icons/buymeacoffee.svg" alt="Buy me a Coffee" width={20} height={20} />
-        <span className="relative after:absolute after:w-0 after:h-px after:bg-orange-500 after:bottom-0 after:left-0 group-hover:after:w-full after:transition-all after:duration-200">
-          Support
+          Star on GitHub
         </span>
       </Link>
     </div>
